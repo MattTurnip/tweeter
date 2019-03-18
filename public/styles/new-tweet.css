@@ -1,0 +1,44 @@
+
+main.container {
+    width: 450px;
+    margin: 80px auto;
+    background-color: white;  
+    margin-bottom: 0px;
+    padding-top: 30px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 100%;
+  }
+  
+  /* maybe be a bit more specific with this selector */
+  main.container   section h2 { 
+    border-bottom:  1px solid black;
+    margin: 0 1rem 1rem 1rem;
+  }
+  
+  main.container section textarea {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 5px;
+    width: 352px;
+  }
+  
+  main.container section input{
+    margin-left: 1rem;
+  }
+  
+  main.container section span{
+    float: right;
+    margin-right: 1rem;
+  }
+  
+  main.container section.new-tweet {
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: #EEEEEE;
+    padding: 10px 0 10px;;
+  }
+
+  .red-text {
+    color: red;
+  }
