@@ -9,10 +9,14 @@ main.container {
     padding-right: 2rem;
     height: 100%;
   }
+
+  section.new-tweet {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
   
-  /* maybe be a bit more specific with this selector */
-  main.container   section h2 { 
-    border-bottom:  1px solid black;
+    section.new-tweet h2 { 
+    border-bottom:  1px solid #c8c8c8;
     margin: 0 1rem 1rem 1rem;
   }
   
@@ -27,14 +31,14 @@ main.container {
     margin-left: 1rem;
   }
   
-  main.container section span{
+  section.new-tweet span{
     float: right;
     margin-right: 1rem;
   }
   
   main.container section.new-tweet {
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid #c8c8c8;
     background-color: #EEEEEE;
     padding: 10px 0 10px;;
   }
