@@ -8,7 +8,7 @@ $("textarea").on("input", function () {
     if (charCount > 0) {
         $(".counter").text(charCount).removeClass("red-text");
     } else if (charCount === 0) {
-        $(".counter").text(charCount);
+        $(".counter").text(charCount).removeClass("red-text");
     } else {
         $(".counter").html(charCount).addClass("red-text");
     }
