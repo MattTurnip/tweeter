@@ -1,14 +1,14 @@
 #tweet-container {
     background-color: white;
-    height: 100%;
     padding-top: 1rem;
   }
-
 
 article.tweet {
     border: 1px #c8c8c8 solid;
     border-radius: 10px;
     opacity: 0.5;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
 }
 
 article.tweet:hover {
