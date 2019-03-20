@@ -45,6 +45,7 @@ $(document).ready(function () {
             $.ajax("/tweets/", { method: "POST", data: $tweetToPost })
                 .success(() => {
                     loadTweets()
+                    $("textarea").val("");
                 });
         } else if ($tweetText === "" || $tweetText === null || $tweetText.length > 140) {
             $("textarea").attr("placeholder", "Please enter something between 1 and 140 characters");

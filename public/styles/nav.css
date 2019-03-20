@@ -20,10 +20,46 @@
 }
 
 #nav-bar .header {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
     display: inline-block;  
     color: #E8FDFF;
-    font-size: 2rem;
+    font-size: 2.5rem;
     float:left;
     margin: 0 0 0 10px;
-    line-height: 1rem;
+    text-shadow: -2px 2px 1px rgba(0,0,0,0.18);
+}
+
+#nav-bar .compose-button {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    width: 106px;
+    height: 46px;
+    float: right;
+    border-radius: 10px;
+    background-color: #E8FDFF;
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+}
+
+#nav-bar .compose-button:hover h3, i{
+    color: black;
+}
+#nav-bar .compose-button:hover i{
+    color: black;
+}
+
+#nav-bar .compose-button i{
+    margin-top: 13px;
+    margin-left: 8px;
+    color:  #00A087;
+        font-size: 95%;
+}
+
+#nav-bar .compose-button h3 {
+    float: right;
+    margin-top: 13px;
+    margin-right: 8px;
+    color:  #00A087;
 }

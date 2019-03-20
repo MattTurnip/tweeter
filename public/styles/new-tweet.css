@@ -5,11 +5,13 @@ main.container {
     background-color: white;  
     padding: 30px 2rem 0 2rem;
     height: 100%;
+
   }
 
   section.new-tweet {
     padding-top: .5rem;
     padding-bottom: .5rem;
+    display: none;
   }
   
     section.new-tweet h2 { 
