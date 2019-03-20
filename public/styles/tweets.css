@@ -56,14 +56,19 @@ article.tweet:hover span.favicons {
 
  article.tweet footer {
     border-top: 1px solid #c8c8c8;
-    padding: .5rem;
-    margin: 0;
+    padding: .5rem 1rem .5rem 1rem;
 }
 
 article.tweet span.favicons {
     float: right;
     margin: 1px;
     opacity: 0;
+}
+
+article.tweet span.favicons i {
+    color: #00A087;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 
