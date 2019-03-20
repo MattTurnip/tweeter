@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    //create a string of html from object data
     function createTweetElement(tweet) {
         const output = `
     <article class="tweet">
@@ -70,7 +71,7 @@ $(document).ready(function () {
         }
     ];
 
-
+    //render tweets from a list of objects
     function renderTweets(tweets) {
         for (let object = 0; object < tweets.length; object++) {
             $('#tweet-container').append(createTweetElement(tweets[object]));
@@ -79,5 +80,47 @@ $(document).ready(function () {
 
 
     renderTweets(dataStore);
+
+    //example ajax request
+    // $(function () {
+    //     var $button = $('#load-more-posts');
+    //     $button.on('click', function () {
+    //         console.log('Button clicked, performing ajax call...');
+    //         $.ajax('more-posts.html', { method: 'GET' })
+    //             .then(function (morePostsHtml) {
+    //                 console.log('Success: ', morePostsHtml);
+    //                 $button.replaceWith(morePostsHtml);
+    //             });
+    //     });
+    // });
+
+    //failed attempt
+    // $(function () {
+    //     var $submit = $("input[type='submit']");
+    //     $submit.on("click", function (event) {
+    //         event.preventDefault();
+    //         console.log("you pressed the button");
+    //         var $tweetText = $("textarea").serialize();
+    //         console.log($tweetText);
+    //         $.ajax($tweetText, { method: "POST" });
+    //     })
+    // });
+
+    $("form").submit(function (event) {
+        event.preventDefault();
+        console.log("you submitted wow");
+        if ($("textarea").val().length <= 140) {
+            var $tweetText = $("textarea").serialize();
+            console.log($tweetText);
+            $.ajax($tweetText, { method: "POST" });
+        } else {
+            console.log("tweet too long");
+        }
+
+
+    })
+
+
+
 
 });
