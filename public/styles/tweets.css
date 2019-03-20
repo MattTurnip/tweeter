@@ -7,14 +7,18 @@ article.tweet {
     border: 1px #c8c8c8 solid;
     border-radius: 10px;
     opacity: 0.5;
-    margin-bottom: .5rem;
-    margin-top: .5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 article.tweet:hover {
     border: 1px #c8c8c8 solid;
     border-radius: 10px;
     opacity: 1
+}
+
+article.tweet:hover span.favicons {
+    opacity: 1;
 }
 
  article.tweet header {
@@ -56,14 +60,14 @@ article.tweet:hover {
     margin: 0;
 }
 
-article.tweet .favicons {
+article.tweet span.favicons {
     float: right;
     margin: 1px;
     opacity: 0;
 }
 
-article.tweet .favicons:hover {
-    float: right;
-    margin: 1px;
-    opacity: 1; 
-}
+
+
+
+
+

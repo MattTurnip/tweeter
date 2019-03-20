@@ -1,26 +1,5 @@
 $(document).ready(function () {
 
-
-
-    const tweetData = {
-        "user": {
-            "name": "Newton",
-            "avatars": {
-                "small": "https://vanillicon.com/788e533873e80d2002fa14e1412b4188_50.png",
-                "regular": "https://vanillicon.com/788e533873e80d2002fa14e1412b4188.png",
-                "large": "https://vanillicon.com/788e533873e80d2002fa14e1412b4188_200.png"
-            },
-            "handle": "@SirIsaac"
-        },
-        "content": {
-            "text": "If I have seen further it is by standing on the shoulders of giants"
-        },
-        "created_at": 1461116232227
-    }
-
-
-
-
     function createTweetElement(tweet) {
         const output = `
     <article class="tweet">
@@ -41,11 +20,6 @@ $(document).ready(function () {
     `;
         return output;
     }
-
-
-
-
-
 
     // Fake data taken from tweets.json
     const dataStore = [
@@ -104,11 +78,6 @@ $(document).ready(function () {
     }
 
 
-    // var $renderTweets = 
     renderTweets(dataStore);
-
-
-
-
 
 });
