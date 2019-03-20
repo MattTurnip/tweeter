@@ -45,3 +45,14 @@ main.container {
   .red-text {
     color: red;
   }
+
+  #popup {
+    display: none;
+    color:red;
+    float: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  
+ 

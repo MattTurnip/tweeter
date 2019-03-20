@@ -39,23 +39,42 @@ $(document).ready(function () {
         event.preventDefault();
         const $tweetText = $("textarea").val().trim();
 
+
         if ($tweetText.length <= 140 && $tweetText.length > 0) {
+
+
             const $tweetToPost = $("textarea").serialize();
-            console.log("your serialized tweet:", $tweetToPost);
             $.ajax("/tweets/", { method: "POST", data: $tweetToPost })
                 .success(() => {
                     loadTweets()
-                    $("textarea").val("");
+                    $("textarea").val("").attr("placeholder", "What are you quacking about?");
                 });
         } else if ($tweetText === "" || $tweetText === null || $tweetText.length > 140) {
-            $("textarea").attr("placeholder", "Please enter something between 1 and 140 characters");
-            alert("enter something between 1 and 140 chars");
+            $("#popup").slideDown("fast", function () {
+            });
+
+
         } else {
             console.log("congrats on finding a new edge case");
         }
 
 
     })
+
+    $(".compose-button").click(() => {
+        $(".new-tweet").slideDown("fast", () => {
+        });
+        $("textarea").focus();
+    });
+
+
+
+    $("textarea").on("input", function () {
+        $("#popup").slideUp("fast", function () {
+        });
+    })
+
+
 
     function loadTweets() {
         $.getJSON("http://localhost:8080/tweets/")

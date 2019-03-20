@@ -18,8 +18,10 @@
   <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
 
+
+
   <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 
   <!-- font awesome glyphicons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -53,8 +55,9 @@
     <section class="new-tweet">
       <h2>Compose Quack</h2>
       <form action="/tweets/" method="POST">
-        <textarea name="text" placeholder="What are you humming about?"></textarea>
-        <input type="submit" value="Tweet">
+        <textarea name="text" placeholder="What are you quacking about?"></textarea>
+        <span id="popup">Please enter something between 1 and 140 characters.</span>
+        <input type="submit" value="Quack">
         <span class="counter">140</span>
       </form>
     </section>
@@ -64,7 +67,6 @@
     </section>
   </main>
 
-  <script type="text/javascript" src="/scripts/animation.js"></script>
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   <script type="text/javascript" src="/scripts/app.js"></script>
 </body>
