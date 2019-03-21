@@ -1,6 +1,6 @@
 # Quacker
 
-Quacker is a very basic, single-page clone of the popular website "Twitter". Users click the compose button, and are treated with a wondrous jQuery animation that reveals are box with which they can voice their opinions, moods, news and etc... 
+Quacker (formerly "Tweeter") is a very basic, single-page clone of the popular website "Twitter". Users click the compose button, and are treated with a wondrous jQuery animation that reveals are box with which they can voice their opinions, moods and favorite tabloid news stories.
 
 Currently, Quacker does not implement unique users, so instead it attaches a randomly generated username, handle and avatar for each "Tweet". The good news is that the tweets are stored in a database. Your 'Tweets' are durable and they will stand the ravages of time.
 
