@@ -1,58 +1,58 @@
 
 main.container {
-    width: 450px;
-    margin: 80px auto 0;
-    background-color: white;  
-    padding: 30px 2rem 0 2rem;
-    height: 100%;
+  width: 500px;
+  margin: 80px auto 0;
+  background-color: white;  
+  padding: 30px 2rem 0 2rem;
+  height: 100%;
+}
 
-  }
+section.new-tweet {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  display: none;
+}
 
-  section.new-tweet {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    display: none;
-  }
-  
-    section.new-tweet h2 { 
-    border-bottom:  1px solid #c8c8c8;
-    margin: 0 1rem 1rem 1rem;
-  }
-  
-  main.container section textarea {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding: 5px;
-    width: 352px;
-  }
-  
-  main.container section input{
-    margin-left: 1rem;
-  }
-  
-  section.new-tweet span{
-    float: right;
-    margin-right: 1rem;
-  }
-  
-  main.container section.new-tweet {
-    border-radius: 10px;
-    border: 1px solid #c8c8c8;
-    background-color: #EEEEEE;
-    padding: 10px 0 10px;;
-  }
+section.new-tweet h2 { 
+  border-bottom:  1px solid #c8c8c8;
+  margin: 0 1rem 1rem 1rem;
+}
 
-  .red-text {
-    color: red;
-  }
+main.container section textarea {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+  padding: 5px;
+  width: 402px;
+}
 
-  #popup {
-    display: none;
-    color:red;
-    float: left;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-  
+main.container section input{
+  margin-left: 1rem;
+}
+
+section.new-tweet span{
+  float: right;
+  margin-right: 1rem;
+}
+
+main.container section.new-tweet {
+  border-radius: 10px;
+  border: 1px solid #c8c8c8;
+  background-color: #EEEEEE;
+  padding: 10px 0 10px;;
+}
+
+.red-text {
+  color: red;
+}
+
+#popup {
+  display: none;
+  color:red;
+  float: left;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
   
  

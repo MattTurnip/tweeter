@@ -14,7 +14,7 @@ $(document).ready(function () {
           <h2>${escape(tweet.user.name)}</h2><span>${escape(tweet.user.handle)}</span>
         </header>
         <div>
-          <p>${escape(tweet.content.text)}</p>
+          ${escape(tweet.content.text)}
         </div>
         <footer>
           ${escape(tweet.created_at)}
