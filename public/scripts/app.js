@@ -1,7 +1,7 @@
-$(document).ready(function () {
+$(document).ready(() => {
 
     function escape(str) {
-        var div = document.createElement('div');
+        const div = document.createElement('div');
         div.appendChild(document.createTextNode(str));
         return div.innerHTML;
     }
@@ -28,6 +28,7 @@ $(document).ready(function () {
     }
 
     function renderTweets(tweets) {
+        $("#tweet-container").empty();
         for (let object = 0; object < tweets.length; object++) {
             $('#tweet-container').prepend(createTweetElement(tweets[object]));
         }
@@ -46,29 +47,28 @@ $(document).ready(function () {
         if ($tweetText.length <= 140 && $tweetText.length > 0) {
             const $tweetToPost = $("textarea").serialize();
             $.ajax("/tweets/", { method: "POST", data: $tweetToPost })
-                .success(() => {
-                    loadTweets()
+                .then(() => {
+                    loadTweets();
                     $("textarea").val("").attr("placeholder", "What are you quacking about?");
+                    $(".counter").text(140);
                 });
         } else if ($tweetText === "" || $tweetText === null || $tweetText.length > 140) {
-            $("#popup").slideDown("fast", function () {
-            });
+            $("#popup").slideDown("fast", () => { });
         } else {
             console.log("congrats on finding a new edge case");
         }
     })
 
     $(".compose-button").click(() => {
-        $(".new-tweet").slideDown("fast", () => {
-        });
+        $(".new-tweet").slideDown("fast", () => { });
         $("textarea").focus();
         $(".compose-button").css("display", "none")
     });
 
-    $("textarea").on("input", function () {
-        $("#popup").slideUp("fast", function () {
-        });
+    $("textarea").on("input", () => {
+        $("#popup").slideUp("fast", () => { });
     })
 
     loadTweets();
+
 });

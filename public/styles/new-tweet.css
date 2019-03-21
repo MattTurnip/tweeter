@@ -3,7 +3,7 @@ main.container {
   width: 500px;
   margin: 80px auto 0;
   background-color: white;  
-  padding: 30px 2rem 0 2rem;
+  padding: 30px 2rem 30px 2rem;
   height: 100%;
 }
 
@@ -11,6 +11,7 @@ section.new-tweet {
   padding-top: .5rem;
   padding-bottom: .5rem;
   display: none;
+  margin-bottom: 1rem;
 }
 
 section.new-tweet h2 { 

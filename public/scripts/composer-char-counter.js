@@ -1,7 +1,5 @@
 
-$(document).ready(function () {
-    console.log("fully loaded, jquery ready ;\)");
-
+$(document).ready(() => {
 
     $("textarea").on("input", function () {
         let charCount = 140 - this.value.length;
@@ -13,6 +11,5 @@ $(document).ready(function () {
             $(".counter").html(charCount).addClass("red-text");
         }
     });
-
 
 });

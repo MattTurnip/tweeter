@@ -1,17 +1,35 @@
-# Tweeter Project
+# Quacker
 
-Tweeter is a simple, single-page Twitter clone.
+Quacker is a very basic, single-page clone of the popular website "Twitter". Users click the compose button, and are treated with a wondrous jQuery animation that reveals are box with which they can voice their opinions, moods, news and etc... 
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+Currently, Quacker does not implement unique users, so instead it attaches a randomly generated username, handle and avatar for each "Tweet". The good news is that the tweets are stored in a database. Your 'Tweets' are durable and they will stand the ravages of time.
 
-## Getting Started
+---
 
-1. Fork this repository, then clone your fork of this repository.
-2. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
+### If you would like to check Quacker out:
 
-## Dependencies
+1. Fork this repo, and then clone it to your local machine
+2. Install the necessary dependencies using the `npm install` command.
+3. Next, get the web server up and running by using the `npm run local` command
+3. In your browser, visit <http://localhost:8080/>.
+4. Let the whole world know your Joy/Troubles/Tribulations.
 
-- Express
-- Node 5.10.x or above
+###The dependencies for this project include:
+
+* body-parser
+* chance
+* express
+* md5
+* mongoDB
+* node.js
+
+---
+Quacker in Action:
+!["Tweet your thoughts!"](/public/images/tweet.png)
+!["Counter and Errors!"](/public/images/countererror.gif)
+!["Fixed Navbar!"](/public/images/navbar.gif)
+
+
+*Bye bye for now!*
+
+
