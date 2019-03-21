@@ -1,5 +1,6 @@
 $(document).ready(() => {
 
+    //prevent XSS attacks
     function escape(str) {
         const div = document.createElement('div');
         div.appendChild(document.createTextNode(str));
