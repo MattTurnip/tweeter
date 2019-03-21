@@ -14,7 +14,7 @@ Currently, Quacker does not implement unique users, so instead it attaches a ran
 3. In your browser, visit <http://localhost:8080/>.
 4. Let the whole world know your Joy/Troubles/Tribulations.
 
-###The dependencies for this project include:
+### The dependencies for this project include:
 
 * body-parser
 * chance
