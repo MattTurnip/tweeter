@@ -26,9 +26,9 @@ Currently, Quacker does not implement unique users, so instead it attaches a ran
 ---
 Quacker in Action:
 
--!["Tweet your thoughts!"](/public/images/tweet.png)
--!["Counter and Errors!"](/public/images/countererror.gif)
--!["Fixed Navbar!"](/public/images/navbar.gif)
+!["Tweet your thoughts!"](/public/images/tweet.png)
+!["Counter and Errors!"](/public/images/countererror.gif)
+!["Fixed Navbar!"](/public/images/navbar.gif)
 
 
 *Bye bye for now!*
